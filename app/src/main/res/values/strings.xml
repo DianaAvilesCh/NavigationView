@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NavigationView</string>
+    <string name="salir">Salir</string>
+    <string name="ajustes">Ajustes</string>
+    <string name="editar">Editar</string>
+    <string name="perfil">Perfil</string>
+    <string name="notificaciones">Notificaciones</string>
+</resources>
