@@ -50,17 +50,17 @@ public class MainActivity extends AppCompatActivity {
 
                             for (int i = 0; i < JSONlista.length(); i++) {
                                 JSONObject user = JSONlista.getJSONObject(i);
-                                if (user.getString("usuario").equals(textU.getText().toString())) {
-                                    if (user.getString("contraseña").equals(textC.getText().toString())) {
-                                        Log.d("DATOOS",user.toString());
-                                        Bundle b = new Bundle();
-                                        b.putString("NOMBRE", user.getString("nombre"));
-                                        //b.putString("pass",textC.getText().toString());
-                                        intent.putExtras(b);
+                                if (user.getString("usuario").equals(textU.getText().toString())
+                                        && user.getString("contraseña").equals(textC.getText().toString())) {
+                                    Log.d("DATOOS", user.toString());
+                                    Bundle b = new Bundle();
+                                    b.putString("NOMBRE", user.getString("nombre"));
+                                    b.putString("IMAGEN", user.getString("img"));
+                                    b.putString("ROL", user.getString("rol"));
+                                    intent.putExtras(b);
 
-                                        j = -1;
-                                    }
                                     i = JSONlista.length();
+                                    j=-1;
                                 }
                                 j += 1;
 

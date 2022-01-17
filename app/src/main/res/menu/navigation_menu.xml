@@ -7,10 +7,21 @@
     <item
         android:id="@+id/menuNot"
         android:icon="@drawable/ic_notify"
-        android:title="@string/notificaciones"/>
+        android:title="@string/notify"/>
+    <item
+        android:id="@+id/op1"
+        android:icon="@drawable/ic_notify"
+        android:title="@string/fav"/>
+    <item
+        android:id="@+id/op2"
+        android:icon="@drawable/ic_notify"
+        android:title="@string/info"/>
+    <item
+        android:id="@+id/op3"
+        android:icon="@drawable/ic_notify"
+        android:title="@string/sug"/>
 
     <item android:title="Otras opciones">
-
         <menu>
             <item
                 android:id="@+id/menuConfig"
